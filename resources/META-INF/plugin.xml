@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>com.weBo.HulkTheme</id>
+    <version>1.0.0</version>
+    <name>HulkTheme</name>
+    <category>UI</category>
+    <vendor email="wesbourkeavl@gmail.com" url="https://www.daBomb.com">WeBo</vendor>
+
+    <idea-version since-build="221" until-build="231.*"/>
+
+    <description><![CDATA[
+    <b>About</b>
+    <br/>
+    HulkTheme is a bold, vibrant dark mode theme for developers who prefer an intense, powerful coding experience. Featuring dark purple backgrounds with Hulk green accents, this theme brings an energetic vibe to your IDE.<br>
+    <em>Experience your code in a whole new light with Hulk-inspired colors that will keep you coding for hours.</em>
+  ]]></description>
+
+    <change-notes><![CDATA[
+    Initial release of the HulkTheme plugin. Includes vibrant Hulk greens, dark purple backgrounds, and enhanced syntax highlighting for Java, designed to bring a powerful atmosphere to your development environment.
+  ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="HulkTheme" path="/theme/HulkTheme.theme.json"/>
+        <colorScheme name="HulkTheme" path="/colors/HulkTheme.icls"/>
+    </extensions>
+</idea-plugin>
